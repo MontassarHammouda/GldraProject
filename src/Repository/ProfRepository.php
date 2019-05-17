@@ -1,11 +1,8 @@
 <?php
-
 namespace App\Repository;
-
 use App\Entity\Prof;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
-
 /**
  * @method Prof|null find($id, $lockMode = null, $lockVersion = null)
  * @method Prof|null findOneBy(array $criteria, array $orderBy = null)
@@ -18,7 +15,6 @@ class ProfRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Prof::class);
     }
-
     // /**
     //  * @return Prof[] Returns an array of Prof objects
     //  */
@@ -35,7 +31,6 @@ class ProfRepository extends ServiceEntityRepository
         ;
     }
     */
-
     /*
     public function findOneBySomeField($value): ?Prof
     {

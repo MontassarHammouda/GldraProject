@@ -1,11 +1,8 @@
 <?php
-
 namespace App\Repository;
-
 use App\Entity\Matiere;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
-
 /**
  * @method Matiere|null find($id, $lockMode = null, $lockVersion = null)
  * @method Matiere|null findOneBy(array $criteria, array $orderBy = null)
@@ -18,7 +15,6 @@ class MatiereRepository extends ServiceEntityRepository
     {
         parent::__construct($registry, Matiere::class);
     }
-
     // /**
     //  * @return Matiere[] Returns an array of Matiere objects
     //  */
@@ -35,7 +31,6 @@ class MatiereRepository extends ServiceEntityRepository
         ;
     }
     */
-
     /*
     public function findOneBySomeField($value): ?Matiere
     {

@@ -24,7 +24,15 @@ class ProfController extends AbstractController
             'profs' => $profRepository->findAll(),
         ]);
     }
-
+    /**
+         * @Route("/profile/{id}", name="profile_show", methods={"GET"})
+         */
+    public function profile(Prof $prof): Response
+    {
+        return $this->render('prof/profile.html.twig', [
+            'prof' => $prof,
+        ]);
+    }
     /**
      * @Route("/new", name="prof_new", methods={"GET","POST"})
      */
